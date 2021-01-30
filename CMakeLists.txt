@@ -549,8 +549,8 @@ include(cmake/Allowlist.cmake)
 
 # ---[ Set link flag, handle additional deps for gcc 4.8 and above
 if(CMAKE_COMPILER_IS_GNUCXX AND CMAKE_CXX_COMPILER_VERSION VERSION_GREATER 4.8.0 AND NOT ANDROID)
-  message(STATUS "GCC ${CMAKE_CXX_COMPILER_VERSION}: Adding gcc and gcc_s libs to link line")
-  list(APPEND Caffe2_DEPENDENCY_LIBS gcc_s gcc)
+  message(STATUS "GCC ${CMAKE_CXX_COMPILER_VERSION}: Adding gcc and gcc_eh libs to link line")
+  list(APPEND Caffe2_DEPENDENCY_LIBS gcc_eh gcc)
 endif()
 
 # ---[ Build flags

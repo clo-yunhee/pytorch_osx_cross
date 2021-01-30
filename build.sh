@@ -35,7 +35,7 @@ bits=64
 blas_arch=x86_64
 pkg_suffix=x86_64-darwin18
 
-cmake_command=$target-cmake
+cmake_command="cmake -DCMAKE_TOOLCHAIN_FILE=$root/macos-toolchain.cmake"
 
 export OSXCROSS_NO_INCLUDE_PATH_WARNINGS=1
 
